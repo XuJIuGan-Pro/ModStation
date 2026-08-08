@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://drive.google.com/uc?export=download&id=1PbGtWNoJjoQ7X0VSwUQE-FGoBiQ8-j1H">
-    <img src="https://img.shields.io/badge/⬇_СКАЧАТЬ-ModStation_Setup_0.4.0.exe-9146FF?style=for-the-badge" height="40">
+    <img src="17861472297f61.png" height="40">
   </a>
 </p>
 
