@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://drive.google.com/uc?export=download&id=1PbGtWNoJjoQ7X0VSwUQE-FGoBiQ8-j1H">
-    <img src="17861472297f61.png" height="320">
+    <img src="17861472297f61.png" height="520">
   </a>
 </p>
 
