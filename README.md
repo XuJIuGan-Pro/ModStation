@@ -1,38 +1,64 @@
-# ModStation 🛡️
+# DEVDECK v3.0.0 🖥️
 
-**Рабочее место модератора Twitch.** Чат в реальном времени, автомодерация,
-пользователи, логи и статистика — в одном дашборде в фиолетовом неоне Twitch.
+> `→ система готова. что сегодня билдим?`
 
-![license](https://img.shields.io/badge/license-MIT-purple?style=flat-square)
-![twitch](https://img.shields.io/badge/twitch-API-9146FF?style=flat-square)
+**Персональная рабочая станция разработчика** — код, квесты, фокус и GLua-справочник
+в одном окне. Тёмный терминальный UI, геймификация продуктивности, всё локально на твоём ПК.
 
-![ModStation](docs/screenshots/hero.png)
+![version](https://img.shields.io/badge/release-v3.0.0-ff4d4d?style=flat-square)
+![platform](https://img.shields.io/badge/platform-Windows-0078D4?style=flat-square&logo=windows)
+![license](https://img.shields.io/badge/license-MIT-orange?style=flat-square)
+![status](https://img.shields.io/badge/status-в_сети-brightgreen?style=flat-square)
 
-## ✨ Возможности
+<p align="center">
+  <a href="https://drive.google.com/drive/folders/157-nYxXhVUpdhaGrlSSeN66AZTDxZ9ib?usp=sharing">
+    <img src="https://img.shields.io/badge/⬇_СКАЧАТЬ-DevDeck_Setup.exe-ff4d4d?style=for-the-badge" height="40">
+  </a>
+</p>
 
-- 💬 **Чат** — модерация в реальном времени: читай и отправляй сообщения, лови нарушителей
-- 🛡 **Фильтры** — автомодерация: спам, ссылки, запрещённые слова — сообщение подсвечивается, спамер помечается
-- 👥 **Пользователи** — таймауты и баны без переключения вкладок
-- 📊 **Дашборд** — статистика и активность канала
-- 📜 **Логи** — история действий модерации
-- 🔐 **Вход через Twitch** — OAuth, без паролей в приложении
+![DevDeck](docs/screenshots/hero.png)
 
-## 🚀 Быстрый старт
+## 🧩 Что внутри
 
-```bash
-git clone https://github.com/USERNAME/modstation.git
-cd modstation
-cp .env.example .env   # впиши TWITCH_CLIENT_ID / TWITCH_CLIENT_SECRET
-npm install
-npm run dev
-```
+| Модуль | Описание |
+|---|---|
+| 🎯 **Полигон** | Песочница HTML/CSS/JS: `Ctrl+Enter` — и превью мгновенно |
+| 🧪 **Glua-lab** | Справочник хуков Garry's Mod: `PlayerSpawn`, `PlayerDeath`, `OnPlayerChat`, `PlayerLoadout` и др. с сигнатурами и поиском |
+| 🍅 **Pomodoro** | Фокус-сессии 25:00, счётчик сессий и «минут фокуса» |
+| 📋 **Канбан** | Доска задач со счётчиками «готово / в работе» |
+| ✂️ **Сниппеты** | Личная база кусков кода |
+| ⚡ **Квесты дня** | «Запусти Lua-код», «Поделись чем-нибудь», «Закрой 2 задачи» |
+| 🏅 **Достижения** | «Луа-мастер», «Квестоман», «Математик», «Журналист» |
+| 🔥 **Прогресс** | Стрик дней, очки, уровни за любую активность |
 
-## 🔑 Ключи Twitch
+## ⌨️ Горячие клавиши
 
-1. Зайди на [dev.twitch.tv/console](https://dev.twitch.tv/console)
-2. Создай приложение → Redirect URL: `http://localhost:3000/callback`
-3. Скопируй Client ID и Secret в `.env`
+| Клавиша | Действие |
+|---|---|
+| `Ctrl+K` | Палитра команд |
+| `Ctrl+Enter` | Запустить код в Полигоне |
+
+## 📥 Установка
+
+1. Скачай установщик: **[DevDeck_Setup.exe](https://drive.google.com/drive/folders/157-nYxXhVUpdhaGrlSSeN66AZTDxZ9ib?usp=sharing)**
+2. Запусти `DevDeck_Setup.exe` → следуй инструкциям мастера установки
+3. Готово — ярлык появится на рабочем столе и в меню «Пуск»
+
+> 💡 Работает на Windows 10/11. Данные хранятся локально — ничего не уходит в облако.
+
+## 🗺 Роадмап
+
+- [ ] экспорт отчёта дня («Журналист»)
+- [ ] калькулятор и новые ачивки
+- [ ] темы оформления
+- [ ] синхронизация профиля между устройствами
 
 ## 📄 Лицензия
 
 [MIT](LICENSE)
+
+---
+
+<p align="center">
+  <sub>Сделано с ❤️ и неоном. Если понравилось — ⭐ на GitHub!</sub>
+</p>
