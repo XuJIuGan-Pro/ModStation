@@ -1,51 +1,37 @@
-# DEVDECK — персональная рабочая станция 🖥️
+# ModStation 🛡️
 
-> `→ система готова. что сегодня билдим?`
+**Рабочее место модератора Twitch.** Чат в реальном времени, автомодерация,
+пользователи, логи и статистика — в одном дашборде в фиолетовом неоне Twitch.
 
-**Код, квесты и фокус — в одном окне.** DevDeck превращает рутину разработчика
-в игру: песочница кода, справочник GLua-хуков, pomodoro, канбан, квесты дня
-и достижения — в тёмном терминальном интерфейсе с неоном.
+![license](https://img.shields.io/badge/license-MIT-purple?style=flat-square)
+![twitch](https://img.shields.io/badge/twitch-API-9146FF?style=flat-square)
 
-![version](https://img.shields.io/badge/release-v3.0.0-ff4d4d?style=flat-square)
-![license](https://img.shields.io/badge/license-MIT-orange?style=flat-square)
-![status](https://img.shields.io/badge/status-в_сети-brightgreen?style=flat-square)
+![ModStation](docs/screenshots/hero.png)
 
-![DevDeck](docs/screenshots/hero.png)
+## ✨ Возможности
 
-## 🧩 Модули
-
-| Модуль | Что делает |
-|---|---|
-| 🎯 **Полигон** | Песочница HTML/CSS/JS: пиши код и жми `Ctrl+Enter` — превью мгновенно |
-| 🧪 **Glua-lab** | Справочник хуков Garry's Mod с поиском: `PlayerSpawn`, `PlayerDeath`, `OnPlayerChat` и др. — с сигнатурами |
-| 🍅 **Pomodoro** | Фокус-сессии 25:00, перерывы, счётчик сессий и «минут фокуса» |
-| 📋 **Канбан** | Доска задач со счётчиками «готово / в работе» |
-| ✂️ **Сниппеты** | Личная база кусков кода |
-| ⚡ **Квесты дня** | «Запусти Lua-код», «Поделись чем-нибудь», «Закрой 2 задачи» |
-| 🏅 **Достижения** | «Луа-мастер», «Квестоман», «Уровень 5», «Журналист», «Математик» |
-| 🔥 **Прогресс** | Стрик дней, очки и уровни за любую активность |
-
-## ⌨️ Горячие клавиши
-
-| Клавиша | Действие |
-|---|---|
-| `Ctrl+K` | Палитра команд |
-| `Ctrl+Enter` | Запустить код в Полигоне |
+- 💬 **Чат** — модерация в реальном времени: читай и отправляй сообщения, лови нарушителей
+- 🛡 **Фильтры** — автомодерация: спам, ссылки, запрещённые слова — сообщение подсвечивается, спамер помечается
+- 👥 **Пользователи** — таймауты и баны без переключения вкладок
+- 📊 **Дашборд** — статистика и активность канала
+- 📜 **Логи** — история действий модерации
+- 🔐 **Вход через Twitch** — OAuth, без паролей в приложении
 
 ## 🚀 Быстрый старт
 
 ```bash
-git clone https://github.com/USERNAME/devdeck.git
-cd devdeck
-open index.html   # зависимости не нужны
+git clone https://github.com/USERNAME/modstation.git
+cd modstation
+cp .env.example .env   # впиши TWITCH_CLIENT_ID / TWITCH_CLIENT_SECRET
+npm install
+npm run dev
 ```
 
-## 🗺 Роадмап
+## 🔑 Ключи Twitch
 
-- [ ] экспорт отчёта дня («Журналист»)
-- [ ] калькулятор и новые ачивки
-- [ ] темы оформления
-- [ ] синхронизация профиля
+1. Зайди на [dev.twitch.tv/console](https://dev.twitch.tv/console)
+2. Создай приложение → Redirect URL: `http://localhost:3000/callback`
+3. Скопируй Client ID и Secret в `.env`
 
 ## 📄 Лицензия
 
